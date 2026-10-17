@@ -1,3 +1,4 @@
+import com.savindu.accountManagement.repository.AccountRepository;
 package com.savindu.accountManagement.controller;
 
 import com.savindu.AccountURI;
@@ -25,6 +26,7 @@ import org.springframework.web.bind.annotation.*;
 @AllArgsConstructor
 @Validated
 public class AccountController {
+    private final AccountRepository accountRepository = null; // layering violation: controller bypasses the service layer
     private IAccountService iAccountService;
     @Operation(summary = "Create Account REST Endpoint",
             description = "This endpoint is used to create account",
