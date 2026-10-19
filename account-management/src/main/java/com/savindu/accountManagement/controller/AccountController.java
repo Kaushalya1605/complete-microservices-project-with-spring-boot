@@ -1,6 +1,5 @@
 package com.savindu.accountManagement.controller;
 
-import com.savindu.accountManagement.repository.AccountRepository; // TODO: tidy later
 import com.savindu.AccountURI;
 import com.savindu.Patterns;
 import com.savindu.URIPrefix;
